@@ -56,14 +56,20 @@ int main(int argc, char **argv){
     btn->setText("OpenFile");
     btn->show();
     QObject::connect(btn, &QPushButton::clicked, [=]{
-        //asyncMsgBoxInfo(nullptr, "Titre", "Texte", QMessageBox::Ok);
-        //std::cout << "Bouton Cliqué" << std::endl;
-        htmlFileAccess->loadFsFile("*.*", "/tmp");
+        std::cout << "Bouton Cliqué" << std::endl;
+        //htmlFileAccess->loadFsFile("*.*", "/tmp");
+        htmlFileAccess->loadFile("*.*");
         });
-    /*QObject::connect(, []{
-        //std::cout << "hehe" << std::endl;
-        });*/
 
+//    QObject::connect(htmlFileAccess, &QHtmlFileAccess::fileDataReady, []{
+//        std::cout << "hehe" << std::endl;
+//        });
+//        fileDataReady n'est pas appelé par loadFsFile
+
+    QObject::connect(htmlFileAccess, &QHtmlFileAccess::fsFileReady, [](const QString &tmpFilePath, const QString &fileName){
+        std::cout << qUtf8Printable(tmpFilePath) << std::endl;
+        std::cout << qUtf8Printable(fileName) << std::endl;
+        });
 
 
     return app.exec();
