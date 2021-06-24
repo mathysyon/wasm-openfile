@@ -47,7 +47,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(m_htmlFileAccess, &QHtmlFileAccess::fsFileReady, [=](const QString &tmpFilePath, const QString &fileName){
         std::cout << "Path : " << qUtf8Printable(tmpFilePath) << std::endl;
         std::cout << "Name of file : "<< qUtf8Printable(fileName) << std::endl;
-        std::string chemin = tmpFilePath.toStdString(); //Transforme un QString en String
+        std::string chemin = tmpFilePath.toStdString(); //Transforme QString en String
         QString fileContent;
 
         std::ifstream flux(chemin);

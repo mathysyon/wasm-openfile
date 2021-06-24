@@ -19,7 +19,7 @@ int main(int argc, char **argv){
     QObject::connect(btn, &QPushButton::clicked, [=]{
         std::cout << "Bouton Cliqué" << std::endl;
         htmlFileAccess->loadFsFile("*.*", "/tmp");
-        //htmlFileAccess->loadFile("*.*"); //??
+        //htmlFileAccess->loadFile("*.*"); //?
     });
 
     //    QObject::connect(htmlFileAccess, &QHtmlFileAccess::fileDataReady, []{
