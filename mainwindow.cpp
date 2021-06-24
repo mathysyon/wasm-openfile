@@ -62,7 +62,7 @@ MainWindow::MainWindow(QWidget *parent) :
         }
         else
         {
-            asyncMsgBoxInfo(this, "Erreur", "Erreur, ouverture du fichier impossible");
+            asyncMsgBoxInfo(this, "Error", "Erreur, ouverture du fichier impossible");
         }
         m_ui->editor->setPlainText(fileContent);
     });

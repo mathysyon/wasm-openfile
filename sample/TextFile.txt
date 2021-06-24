@@ -1,0 +1,20 @@
+~~~~~~~~~~~~~~~~
+This is a 
+text file 
+~~~~~~~~~~~~~~~~
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Etiam hendrerit tellus sit amet porttitor facilisis. 
+Fusce nec nisi vitae ante mollis commodo. Proin faucibus tristique suscipit. 
+Sed vitae ex rhoncus, euismod quam id, dapibus libero. Nam sed varius nisi, in convallis lorem. 
+Cras vulputate quis libero id elementum. 
+Nullam varius, est sit amet rutrum sodales, libero ipsum posuere nibh, eu finibus quam erat vitae ante.
+ Nulla fermentum turpis sit amet urna ultricies, at sagittis dui viverra. 
+Maecenas tempor, mi ac convallis efficitur, tortor lorem vehicula ante, non vestibulum nunc enim sit amet tortor.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+Nullam ex ipsum, rutrum ac ornare at, vestibulum quis neque. Donec ac sollicitudin quam. 
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+Nullam nec consectetur lectus. Phasellus suscipit mi est, et sodales purus fermentum at. 
+Sed eget mauris sit amet risus faucibus hendrerit.
