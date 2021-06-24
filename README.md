@@ -1,2 +1,0 @@
-# Wasm OpenFile (using Qt)
-* 
