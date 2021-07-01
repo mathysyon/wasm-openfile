@@ -2,32 +2,32 @@ Wasm OpenFile (using Qt)
 ================== 
 
 Installation and configuration:
- 1. Install Emscripten SDK and activate minimal configuration (Python, Java and CLang) following *emsdk* documentation. Activate also MinGW when building sample on Windows host.
+ **1.** Install Emscripten SDK and activate minimal configuration (Python, Java and CLang) following *emsdk* documentation. Activate also MinGW when building sample on Windows host.
 ~~~~~
     > https://emscripten.org/docs/getting_started/downloads.html
 ~~~~~
 
- 2. Install Qt.
+ **2.** Install Qt.
 ~~~~~
     > https://www.qt.io/download
 ~~~~~
 
- 3. Create new project with Qt WebAssembly, execute QMake and build it.
+ **3.** Create new project with Qt WebAssembly, execute QMake and build it.
 
- 4. Install Apache Lounge (for the local server):
+ **4.** Install Apache Lounge (for the local server):
 ~~~~~
     > https://www.apachelounge.com/download/
 ~~~~~
 
- 5. Open "httpd.conf" (C:\Apache24\conf).
+ **5.** Open "httpd.conf" (C:\Apache24\conf).
 ~~~~~
     Line 251 and 252, replace the base path with your build folder location  :
     > DocumentRoot "build_folder_location"
     > <Directory "build_folder_location">
 ~~~~~
- 6. If you want to block all caching and not compress the .wasm file (in the build_folder) every time (for all attempts until the project is complete), create an .htaccess file at the root of your apache server and paste the code at the end of ReadMe.md into it (and skip step 7).
+ **6.** If you want to block all caching and not compress the .wasm file every time (for all attempts until the project is complete), create an .htaccess file at the root of your apache server and paste the code at the end of ReadMe.md into it (and skip step 7).
 
- 7. For the compression of the end .wasm file (in build folder) :
+ **7.** For the compression of the end .wasm file (in build folder) :
  * In "httpd.conf" :
 ~~~~~
     Line 416, remove the "#" and add ".wasm" : 
@@ -37,12 +37,12 @@ Installation and configuration:
 ~~~~~
     > https://gzip.swimburger.net/  
 ~~~~~
- * Put the .gz file in the build_folder_location, delete the original .wasm, and rename the .gz file to .wasm :
+ * Put the .gz file in the build folder location, delete the original .wasm, and rename the .gz file to .wasm :
 ~~~~~
     "wasm-openfile.wasm.gz" -> "wasm-openfile.wasm"
 ~~~~~
 
- 8. Run "httpd.exe" (C:\Apache24\bin), open compatible browser and enter path taking into account your web server settings :
+ **8.** Run "httpd.exe" (C:\Apache24\bin), open compatible browser and enter path taking into account your web server settings :
 ~~~~~
     > http://localhost/wasm-openfile.html
 ~~~~~
