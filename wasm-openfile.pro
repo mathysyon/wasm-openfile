@@ -1,6 +1,6 @@
 TEMPLATE = app
 QT += core gui widgets
-TARGET = test
+TARGET = wasm-openfile
 SOURCES += main.cpp \
     mainwindow.cpp
 CONFIG += console
